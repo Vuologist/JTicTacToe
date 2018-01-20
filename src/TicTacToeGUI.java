@@ -11,7 +11,7 @@ import javax.swing.*;
  *  Description:
  *      This program is responsible for creating a Tic Tac Toe GUI
  *      playing board and will be rendered through java swing. The
- *      user will be able to interact with the board. This a 2
+ *      user will be able to interact with the board. This is a 2
  *      player game with no ai opponent implemented.
  */
 public class TicTacToeGUI implements ActionListener {
@@ -53,7 +53,7 @@ public class TicTacToeGUI implements ActionListener {
     }
 
     public static void main (String args[]){
-        System.out.println("A. Vu Tic Tac Toe");
+        System.out.println("A. Vu's Tic Tac Toe");
         SwingUtilities.invokeLater(new Runnable(){
             public void run(){
                 new TicTacToeGUI();
