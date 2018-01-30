@@ -14,7 +14,7 @@ import javax.swing.*;
  *      user will be able to interact with the board. This is a 2
  *      player game with no ai opponent implemented.
  */
-public class TicTacToeGUI implements ActionListener {
+public class JTicTacToe implements ActionListener {
     JButton button[] = new JButton[9];
     int counter = 0;
 
@@ -23,7 +23,7 @@ public class TicTacToeGUI implements ActionListener {
         4   5   6
         7   8   9
         */
-    public TicTacToeGUI(){
+    public JTicTacToe(){
 
         JFrame jfrm = new JFrame("Tic Tac Toe");
         jfrm.setLayout(new GridLayout(3,3));
@@ -56,7 +56,7 @@ public class TicTacToeGUI implements ActionListener {
         System.out.println("A. Vu's Tic Tac Toe");
         SwingUtilities.invokeLater(new Runnable(){
             public void run(){
-                new TicTacToeGUI();
+                new JTicTacToe();
             }
         });
     }
